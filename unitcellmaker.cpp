@@ -1,17 +1,12 @@
-//This script can be used to either:
-	//1. rotate/translate two structures, merge them and cut out a unit cell from the merged structure or
-	//2. rotate two unit cells, create domains of these unit cells and merge the domains to create a domain wall
-//Make sure that any values are in brackets if arithmetic operations are used.
-
 //__________________________________INPUT/OUTPUT__________________________________//
 //Name of the input files/cells in quotation marks.
 //Need to be in .xyz format or .vasp (POSCAR) format.
 //If you want to rotate/shift a single file set the second input as an empty string ("").
-#define INPUT1 "Pm-3m.xyz"
+#define INPUT1 ""
 #define INPUT2 ""
 
 //Name of the output file and output format ("POSCAR" or "xyz") in quotation marks.
-#define OUTPUT "POSCAR_test"
+#define OUTPUT ""
 #define OUTPUT_FORMAT "POSCAR"
 //_________________________________________________________________________________//
 
@@ -25,10 +20,10 @@
 //Rotation of 1st cell (in degrees)
 #define ALPHA1 0
 #define BETA1  0
-#define GAMMA1 45
+#define GAMMA1 0
 //Rotation of 2nd cell (in degrees)
 #define ALPHA2 0
-#define BETA2 180
+#define BETA2 0
 #define GAMMA2 0
 
 //Define custom rotation axes (just the direction is relevant, i.e. length doesn't matter) in cartesian coordinates.
@@ -53,12 +48,12 @@
 //Translation of 1st cell
 #define SHIFT_X1 0
 #define SHIFT_Y1 0
-#define SHIFT_Z1 0.063625
+#define SHIFT_Z1 0
 
 //Translation of 2nd cell
-#define SHIFT_X2 (0.063625)
+#define SHIFT_X2 0
 #define SHIFT_Y2 0
-#define SHIFT_Z2 7.84168
+#define SHIFT_Z2 0
 //_________________________________________________________________________________//
 
 
